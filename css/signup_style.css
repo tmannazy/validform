@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Caslon+Display&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', 'Libre Caslon Display', serif;
+}
+
+html,
+body {
+    height: 50%;
+    margin-top: 10%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: hsl(250, 20%, 40%);
+}
+
+.reg-form {
+    background: hsl(250, 20%, 40%);
+    width: 70%;
+    height: auto;
+    margin: 0px 0px 25px 0px;
+    padding: 2% 4%;
+    border-radius: 4px;
+    box-shadow: -15px -11px 11px 0px hsla(0, 0%, 0%, 30%), 17px 27px 61px 0 hsla(240, 90%, 90%, 10%);
+    transition: .9s;
+}
+
+.title {
+    margin: 2% 0;
+    text-align: center;
+    color: hsl(120, 0%, 95%);
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.info {
+    text-align: center;
+    color: hsl(0, 100%, 75%);
+    text-transform: capitalize;
+    font-size: larger;
+    padding-bottom: 2%;
+}
+
+.user_field {
+    width: 100%;
+    display: flex;
+}
+
+.user_field input,
+.email_field input,
+.pwd_field input {
+    padding: 1.9% 30px 1.9%;
+    background-color: hsl(250, 20%, 40%);
+    color: hsl(120, 0%, 95%);
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    width: 100%;
+    margin: 2% 1% 2% 0;
+    box-shadow: inset 2px 2px 5px hsl(0, 5%, 5%, 60%), inset -2px -9px 7px hsla(250, 20%, 45%);
+}
+
+.user_field input::placeholder,
+.email_field input::placeholder,
+.pwd_field input::placeholder {
+    font-size: 1em;
+    padding-left: 2px;
+    color: rgba(242, 242, 242, 0.281);
+}
+
+.user_field input:focus::placeholder,
+.email_field input:focus::placeholder,
+.pwd_field input:focus::placeholder {
+    color: hsl(0, 100%, 75%);
+    font-weight: 500px;
+}
+
+.user_field input:valid,
+.email_field input:valid,
+.pwd_field input:valid {
+    background-color: hsl(250, 33%, 56%);
+    color: hsl(330, 22%, 96%);
+    box-shadow: inset -5px -2px 10px hsl(0, 5%, 5%, 60%), inset 5px 8px 7px hsla(250, 0%, 75%);
+}
+
+.check_agreement {
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 1.1em;
+    margin-bottom: 1 0px;
+}
+
+.check_agreement a {
+    text-decoration: none;
+    color: hsl(0, 100%, 75%);
+    font-weight: 500;
+}
+
+.check_agreement a:hover {
+    text-decoration: underline;
+    color: hsl(202, 100%, 50%);
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 2% auto;
+    cursor: pointer;
+    font-size: 1.3rem;
+    background-color: hsl(250, 33%, 56%);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    box-shadow: -5px -2px 10px hsla(0, 15%, 5%, 20%), 5px 5px 7px hsla(250, 0%, 5%, 60%);
+}
+
+.button:focus {
+    color: hsl(180, 90%, 48%);
+    font-weight: 700;
+    box-shadow: inset -5px -2px 10px hsla(0, 15%, 5%, 20%), inset 5px 5px 7px hsla(250, 0%, 5%, 90%);
+}
+
+.login {
+    text-align: center;
+    font-size: 1.1em;
+    color: hsl(120, 0%, 95%);
+    display: inline-block;
+    margin: 0;
+}
+
+.login a {
+    text-decoration: none;
+    color: hsl(120, 0%, 95%);
+}
+
+.login a:hover {
+    text-decoration: underline;
+    background-color: hsl(210, 89%, 15%);
+    color: rgb(20, 196, 240);
+}
+
+@media only screen and (max-width:550px) {
+    section .reg-form {
+        margin: 5% 0px 0px 0px;
+        width: 330.7812px;
+    }
+    .title {
+        font-size: 1.4rem;
+    }
+    .info {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .user_field input,
+    .email_field input,
+    .pwd_field input {
+        font-size: 0.9rem;
+        padding-left: 5px;
+    }
+    input[type=checkbox] {
+        width: 6%;
+        padding-top: 40px;
+    }
+    .check_agreement {
+        font-size: 0.7rem;
+        margin: 0;
+    }
+    .button {
+        font-size: 0.7rem;
+        height: 20px;
+    }
+    .login {
+        font-size: 0.9rem;
+    }
+}

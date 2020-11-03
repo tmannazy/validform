@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup_style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Taltech | Sign Up</title>
+</head>
+
+<body>
+    <section class="reg-form">
+        <h1 class="title">Sign Up</h1>
+        <p class="info">Kindly register below to benefit from taltech training!</p>
+        <hr>
+        <form action="" method="post">
+            <div class="user_field">
+                <input type="text" name="fname" id="fname" placeholder="First Name" autocomplete="fname" pattern="^[a-zA-Z]{2,}$" required>
+                <input type="text" name="lname" id="lname" placeholder="Last Name" autocomplete="lname" pattern="^[a-zA-Z]{2,}$" required>
+            </div>
+            <div class="email_field">
+                <input type="email" name="email" id="email" placeholder="name@example.com" autocomplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </div>
+            <div class="pwd_field">
+                <input type="password" name="pwd" id="pwd" placeholder="Password" autocomple="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required>
+                <input type="password" name="confirm_pwd" id="confirm_pwd" placeholder="Confirm Password" autocomplete="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required>
+            </div>
+            <input type="checkbox" name="terms" id="terms" required>
+            <p class="check_agreement">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy.</a></p><br>
+            <input type="submit" value="Sign Up" class="button" disable></input>
+        </form>
+    </section>
+    <p class="login">Already have an account? <a href="login.html">Login here.</a></p>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
