@@ -188,6 +188,18 @@
         transition: .5s;
     }
     
+    .new {
+        justify-content: center;
+    }
+    
+    .new p {
+        display: inline;
+    }
+    
+    .new p a {
+        display: block;
+    }
+    
     @media only screen and (max-width:1050px) {
         .container {
             gap: 1rem;
